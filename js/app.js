@@ -2,6 +2,7 @@ var ViewModel = function(){
     this.clickCount = ko.observable(0);
     this.name = ko.observable('Tabby');
     this.imgSrc = ko.observable('img/cat1.jpg');
+    this.nickNames = ko.observableArray(['Tabby','Bubbles','Kitty']);
 
     this.incrementCounter = function(){
         this.clickCount(this.clickCount() + 1);
